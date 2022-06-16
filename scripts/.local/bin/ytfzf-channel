@@ -1,0 +1,12 @@
+#!/bin/sh
+echo $1
+if [ $1 == "-D" ] ; then
+         bg=$(cat ~/.cache/wal/colors | sed -n '11p')
+    channel=$(/bin/cat ~/.config/ytfzf/subscriptions |  grep -v ^\# |  grep  . | awk -F '#' '{print $NF}' |tr -d '\t' | dmenu -nb "#0f0f0f" -sb $bg -i -l 30 -p "Choose channel:")
+        url=$(/bin/cat ~/.config/ytfzf/subscriptions | grep "$channel" | awk -F '#' '{print $1}')
+            ytfzf -l -D -c youtube-channel $url 
+else
+    channel=$(/bin/cat ~/.config/ytfzf/subscriptions |  grep -v ^\# |  grep  . | awk -F '#' '{print $NF}' | fzf)
+        url=$(/bin/cat ~/.config/ytfzf/subscriptions | grep "$channel" | awk -F '#' '{print $1}')
+            ytfzf -l -c youtube-channel $url
+fi

@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+#python ~/.config/youtube-local/server.py &
+
+# USERXSESSION="$XDG_CACHE_HOME/X11/xsession"
+# USERXSESSIONRC="$XDG_CACHE_HOME/X11/xsessionrc"
+# ALTUSERXSESSION="$XDG_CACHE_HOME/X11/Xsession"
+# ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
+
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY&
+setxkbmap -option caps:swapescape &
+xset b off &
+
+nm-applet &
+nmcli connection up JioFiber-Home5G&
+
+# Starting window manager
+exec i3

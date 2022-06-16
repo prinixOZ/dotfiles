@@ -1,0 +1,25 @@
+{
+    "als_polling_rate": 5000,
+    "brt_auto_fps": 60,
+    "screens": [
+        {
+            "brt_auto_max": 500,
+            "brt_auto_min": 125,
+            "brt_auto_offset": 0,
+            "brt_auto_polling_rate": 1000,
+            "brt_auto_speed": 1000,
+            "brt_auto_threshold": 8,
+            "brt_mode": 0,
+            "brt_step": 500,
+            "temp_auto": true,
+            "temp_step": 0
+        }
+    ],
+    "temp_auto": true,
+    "temp_auto_fps": 45,
+    "temp_auto_high": 6500,
+    "temp_auto_low": 3400,
+    "temp_auto_speed": 60,
+    "temp_auto_sunrise": "06:00",
+    "temp_auto_sunset": "16:30"
+}

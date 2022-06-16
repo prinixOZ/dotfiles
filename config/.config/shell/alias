@@ -1,0 +1,144 @@
+# Base programs with extra functionality
+alias cp='cp -v'
+alias mv="mv -v"
+alias rm='rm -v'
+alias cat="bat"
+alias grep="rg"
+alias df='df -h'
+alias wget="wget -c"
+alias grep='grep --color=auto'
+alias bash="bash --init-file ~/.config/bash/bashrc"
+alias untar='tar -zxvf '
+alias myip='curl ipinfo.io/ip'
+alias mnt="mount | grep -E ^/dev | column -t"
+alias lf='lfub'
+alias 2jpg='mogrify -format jpg *.png && rm *.png'
+alias aria2cp='aria2c --seed-time=0 (xclip -o)'
+alias s="nsxiv"
+alias sxiv="nsxiv"
+#alias +x='chmod +x'
+
+alias sl="exa --icons --classify --group-directories-first"
+alias ls="exa --icons --classify --group-directories-first"
+alias ll="exa --icons --classify --group-directories-first -a1"
+alias la="exa --icons --classify --group-directories-first -a" 
+alias l="exa --group-directories-first --icons --classify --oneline"
+alias lt="du -sh * | sort -h"
+alias tree="exa -1 --group-directories-first --icons --classify --tree"
+
+# Stowing dotfiles
+#alias stow="cd /home/ps/dotfiles && /bin/stow -vt ~ dotfiles && cd -"
+#alias unstow="cd /home/ps/dotfiles && /bin/stow -vD dotfiles && cd -"
+
+#Searching History
+alias h='history'
+alias hs='history | grep'
+alias hsi='history | grep -i'
+
+#YTFZF
+alias ytfzf="ytfzf -tl"
+alias subs="ytfzf -c S --sort date"
+alias trend="ytfzf -c invidious-popular 'a'"
+alias castero="castero --export ~/.config/castero/podcasts.ompl && /bin/castero"
+alias newsboat="newsboat -q"
+alias nb="newsboat -q"
+
+
+# short spells
+alias v="nvim"
+alias d="spotdl --path-template '{artist}/{album}/{title} - {artist}.{ext}'"
+alias live="browser-sync start --server --files . --no-notify --host $SERVER_IP --port 3000"
+alias trash="gio trash"
+alias c="clear"
+alias x="exit"
+alias t="trackma-curses"
+alias w3m="w3m -B"
+
+
+
+
+# Scripts
+alias weather='clear && curl wttr.in/Jamshedpur'
+alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+alias airing='curl -s "https://animeschedule.net/subrss.xml" | grep -oP "(?<=<title>)[^<]+" | tail -n +2'
+
+#Github
+alias gc="git clone --depth=1"
+alias push-u="git push -u origin main"
+
+# Multipe program at once
+alias n="cd && clear"
+alias o="open (fzf --preview 'bat --style=numbers --color=always --line-range :500 {}')"
+
+# Package
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
+
+# config
+alias nf="$EDITOR ~/.config/fish/config.fish"
+alias addbms="$EDITOR ~/data/.recover/bookmarks"
+alias vweb='$EDITOR /mnt/data/.recover/bookmarks'
+alias vi3="$EDITOR ~/.config/i3/config"
+alias valias="$EDITOR ~/.config/shell/alias"
+alias vsubs="$EDITOR ~/.config/ytfzf/subscriptions"
+alias vrss="$EDITOR ~/.config/newsboat/urls"
+
+# Grub
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias reload-fonts="fc-cache -f -v"
+
+
+#Youtube-dl
+alias yt="youtube-dl -f best"
+alias yt-channel='youtube-dl -f best -ciw -o "%(title)s.%(ext)s" -v'
+alias yt-playlist='youtube-dl -i -f mp4 --yes-playlist'
+
+# navigation
+alias ..='cd ..'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+
+alias yay="paru"
+alias p="paru -S"
+alias pi="paru -Si"
+alias pq="paru -Qe"
+alias pr="paru -Rns"
+alias pu="paru -Syu --noconfirm"
+
+#get fastest mirrors in your neighborhood
+alias mirror=" sudo reflector --latest 30 --number 10 --verbose --fastest 30 --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 30 --number 10 --verbose --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 30 --number 10 --verbose --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 30 --number 10 --verbose --sort age   --save /etc/pacman.d/mirrorlist"
+
+#kill
+alias kmpc="killall mocp"
+
+alias so="source ~/.config/zsh/.zshrc"
+
+#Directory
+alias .e="cd /home/ps/.Entertainment/"
+alias amovie="cd /mnt/data/.Entertainment/Anime/Movies"
+alias series="cd /mnt/data/.Entertainment/series"
+alias music="cd /home/ps/.Entertainment/Music"
+alias video="cd /mnt/computer/Videos/"
+alias screenshot="cd /mnt/computer/Pictures/Screenshot/"
+alias picture="cd /mnt/computer/Pictures/"
+
+alias gcd="cd /mnt/prinix/project/others"
+alias mygcd="cd /mnt/prinix/project/prinixoz"
+
+alias wallpaper="cd /home/ps/Pictures/wallpaper"
+alias project="cd /mnt/prinix/project/"
+alias dotfiles="cd /home/ps/dotfiles"
+alias data="cd /mnt/data"
+alias prinix="cd /mnt/prinix"
+alias computer="cd /mnt/computer"
+alias school="cd /mnt/personal"
+
+#Commands
+alias dmenu="dmenu -l 8 -nb '#0F0F0F' -sb '#FE233C' -p 'Choose:'"
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'

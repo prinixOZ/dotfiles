@@ -1,0 +1,3 @@
+#!/bin/sh
+bg=$(cat ~/.cache/wal/colors | sed -n '11p')
+networkmanager_dmenu -nb "#0f0f0f" -sb "$bg" -l 40
