@@ -69,6 +69,9 @@ run(){
 
 var=0
 while [[ $var -le 5 ]]; do
-	run
+	run&
+	sleep 0.5
+	run&
+	sleep 0.5
 	((var++))
 done
