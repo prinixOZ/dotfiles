@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+function bat(){
+	for battery in /sys/class/power_supply/BAT?*; do
+		# If non-first battery, print a space separator.
+		[ -n "${capacity+x}" ] && printf " "
+		capacity="$(cat "$battery/capacity" 2>&1)"
+		status="$(cat "$battery/status" 2>&1)"
+	done
+}
+
+function cpu(){
+	read cpu a b c previdle rest < /proc/stat
+	prevtotal=$((a+b+c+previdle))
+	sleep 0.5
+	read cpu a b c idle rest < /proc/stat
+	total=$((a+b+c+idle))
+	cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+}
+
+function mem(){
+	mem=$(free --mebi | sed -n '2{p;q}' | awk '{printf ("%.2fGB\n", $3 / 1024)}')
+}
+
+function connection(){
+	con_type=$(nmcli d | grep -w "connected  " | awk '{print $2}')
+	con=$(nmcli d | grep -w "connected  " | awk '{print $NF}')
+	if [[ $(nmcli d | grep -w tun) ]]; then
+		vpn=[V]
+	else
+		vpn=[-]
+	fi
+
+	if [[ $(nmcli d | grep -w "connected  ") ]]; then
+		GET="cat /proc/net/dev"
+		IF=$(nmcli d | grep -w "connected  " | awk '{print $1}')
+		RX1=`$GET | grep $IF | awk '{print $2}'`; TX1=`$GET | grep $IF | awk '{print $10}'`
+		sleep 1
+		RX2=`$GET | grep $IF | awk '{print $2}'`; TX2=`$GET | grep $IF | awk '{print $10}'`
+		rx=$((($RX2 - $RX1) * 1)); tx=$((($TX2 - $TX1) * 1))
+	fi
+
+	if [[ $(nmcli d | grep -w "connected  ") ]]; then
+		int=$(echo "Connected to $con_type : $con $vpn\nNet Traffic      Up:$(numfmt --to=iec $tx)B   Down:$(numfmt --to=iec $rx)B")
+	else
+		int=$(echo "You are currently offline.")
+	fi
+}
+
+call(){
+	bat
+	cpu
+	mem
+	connection
+}
+
+run(){
+	call
+	#Functions 
+	dunstify -r 9992 "System Overview" "Battery is at $capacity%[$status].
+	CPU usage is $cpu%.
+	Memory is at $mem utilization.
+	$int
+	"
+}
+
+
+var=0
+while [[ $var -le 5 ]]; do
+	run
+	((var++))
+done

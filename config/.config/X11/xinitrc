@@ -14,7 +14,6 @@ setxkbmap -option caps:swapescape &
 xset b off &
 
 nm-applet &
-nmcli connection up JioFiber-Home5G&
 
 # Starting window manager
 exec i3

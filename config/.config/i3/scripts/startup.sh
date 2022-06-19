@@ -5,6 +5,7 @@ picom -f --experimental-backends &
 unclutter --timeout 1 &
 gummy start &
 xbacklight -set 20 &
+nmcli connection up JioFiber-Home5G &
 
 rep 60 "$HOME/.local/bin/capsesc" &
 rep 3600 "~/.local/bin/rss" &
