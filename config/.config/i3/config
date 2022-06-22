@@ -97,6 +97,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+c exec alacritty -e gotop
 bindsym $mod+e exec alacritty -e lfub
 bindsym $mod+o exec  alacritty --title=pulsemixer -e pulsemixer
+bindsym $mod+Shift+o exec  overview
 bindsym $mod+x exec i3lock -c 000000 -R 1000 -F 100 -O 0 -o ffffff -l ffffff --no-keyboard-layout -T 1
 
 #==============================================================================
@@ -126,9 +127,9 @@ bindsym $mod+Shift+l move right
 #==============================================================================
 #+++++++++++++++++++++++++++ Volume Keybindings +++++++++++++++++++++++++++++++
 #==============================================================================
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -1%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id volume up
+bindsym XF86AudioLowerVolume exec --no-startup-id volume down
+bindsym XF86AudioMute exec --no-startup-id volume mute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 #==============================================================================

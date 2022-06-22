@@ -1,0 +1,2 @@
+#!/bin/sh
+librewolf --new-window -P app https://anilist.co/
