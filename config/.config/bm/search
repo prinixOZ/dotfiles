@@ -1,0 +1,5 @@
+yt | http://localhost:2000/youtube.com/results?search_query=%s
+amazon | https://www.amazon.in/s?k=%s
+yandex | https://yandex.com/search/?text=%s
+brave | https://search.brave.com/search?q=%s
+duckduckgo | https://duckduckgo.com/?q=%s

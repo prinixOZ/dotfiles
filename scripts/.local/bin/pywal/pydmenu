@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+bg=$(cat ~/.cache/wal/colors | sed -n '11p')
+dmenu_run -l 8 -g 4 -nb "#0F0F0F" -sb "$bg" -p "Run: "

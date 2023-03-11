@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mpv ~/.local/share/lofi --speed=1 --title="minimize"

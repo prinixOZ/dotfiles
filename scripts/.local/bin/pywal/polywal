@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ $1 ] ; then
+    imagepath=$(realpath $1)
+    wal -i $imagepath
+    alacritty-wal
+    genzathurarc > ~/.config/zathura/zathurarc
+else
+    wal -i ~/Pictures/wallpaper/
+    alacritty-wal
+    genzathurarc > ~/.config/zathura/zathurarc
+fi
+
+dunstwal &
+
+sleep 7
+mv ~/.fehbg ~/.config/i3/scripts/fehbg.sh

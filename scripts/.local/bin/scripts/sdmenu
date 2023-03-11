@@ -1,0 +1,10 @@
+#!/bin/sh
+
+file="$HOME/.config/bm/search"
+
+bg=$(cat ~/.cache/wal/colors | sed -n '11p')
+content=$(cat $file| sed -e '/^\s*#/d' | column -ts "|" -o "$(printf "%100s")|" |dmenu -nb "#0f0f0f" -sb $bg -i -l 8 -g 4 -p "Choose :" | awk -F "|" '{print $NF}')
+[ $content ] && term=$(echo "" | dmenu -nb "#0f0f0f" -sb $bg -i -p "Search :" | sed "s/\ /+/g")
+search=$(echo $content | sed "s/%s/$term/g")
+[ $term ] && librewolf -P default "$search"
+

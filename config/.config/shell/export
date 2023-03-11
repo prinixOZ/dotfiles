@@ -1,0 +1,46 @@
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export ANDROID_HOME="$XDG_DATA_HOME"/android
+export STARSHIP_CONFIG=~/.starship/config.toml
+export TERM="alacritty"
+export BROWSER="librewolf -P default"
+export RUST_BACKTRACE=1
+export MANPAGER='nvim +Man!'
+export EDITOR='nvim'
+export VISUAL='nvim'
+#export TERMINAL='alacritty'
+export RUST_BACKTRACE=1
+export VIEB_DATAFOLDER=~/.local/share/Vieb/
+export TERMCMD='alacritty -e'
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+
+
+#ZSH
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+export NNN_BMS="0:$HOME/prinix/.Entertainment/Anime/series;9:$HOME/prinix/.Entertainment/Anime/series/Kayoanime;8:$HOME/prinix/.Entertainment/Anime/series/Watching;7:$HOME/prinix/.Entertainment/Series;6:$HOME/prinix/.Entertainment/movies;p:$HOME/prinix/Computer/Pictures;m:$HOME/prinix/Computer/Music;d:$HOME/Downloads;D:$HOME/prinix/Computer/Documents;v:$HOME/prinix/Computer/Videos;g:$HOME/prinix/git"
+
+export YTFZF_CONFIG_DIR=$HOME/.config/ytfzf
+export YTFZF_CONFIG_FILE=$YTFZF_CONFIG_DIR/conf.sh
+
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
+export CABAL_DIR="$XDG_CACHE_HOME"/cabal
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export SCREENRC="$XDG_CONFIG_HOME"/screen/screenrc
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+export RXVT_SOCKET="$XDG_RUNTIME_DIR"/urxvtd
+
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
+
+#NNN
+export NNN_PLUG='p:preview-tui;r:renamer;c:cdpath;o:xdgdefault;m:addtoplaylist'
+export NNN_FIFO="/tmp/nnn.fifo"
+export SPLIT="v"
+
+
+export WALLPAPERDIR="/home/prinix/project/prinixoz/wallpapers"
+
+export GLAMOUR_STYLE="dark"
