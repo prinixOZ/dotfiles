@@ -1,0 +1,28 @@
+#!/bin/bash
+photos(){
+    cd ~/Pictures/
+    rclone sync . "drive:Personal/Pictures"
+    cd -
+}
+
+config(){
+    cd ~/.code/
+    git add .
+    git commit -m "+"
+    git push origin master
+    cd -
+}
+
+all(){
+    photos
+    config
+}
+
+case $1 in 
+    -p)
+        photos;;
+    -c)
+        config;;
+    *)
+        all;;
+esac

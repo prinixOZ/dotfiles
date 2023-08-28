@@ -48,6 +48,8 @@ export WALLPAPERDIR="/mnt/prinix/project/prinixoz/wallpapers/"
 # PATH
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.local/bin/scripts
+export PATH=$PATH:$HOME/.local/bin/polybar
+export PATH=$PATH:$HOME/.local/bin/start
 export PATH=$PATH:$HOME/.local/bin/pywal
 export PATH=$PATH:$HOME/.local/bin/links
 export PATH=$PATH:$HOME/.local/appimage

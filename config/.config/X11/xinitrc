@@ -10,20 +10,13 @@
 # ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
 
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY&
-setxkbmap -option caps:swapescape &
 xset b off &
-polywal &
-
-python ~/.local/share/yt-local/server.py &
-
-gummy start &
-gummy -T 1 -y 06:00 -u 16:30 --temperature-min 3000 --temperature-max 5000 &
-brightnessctl s "25%"
-
+setxkbmap -option caps:swapescape &
+librewolf &
+zsh &
+python ~/.local/share/youtube-local/server.py &
 find &
-
 rep 5 "bat-stat" &
-
 
 # Starting window manager
 exec i3

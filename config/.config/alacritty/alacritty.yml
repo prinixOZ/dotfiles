@@ -202,34 +202,34 @@ key_bindings:
   - key: Period
     mods: Control
     action: SpawnNewInstance
-#shell:
-      #program: /bin/bash
+shell:
+      program: /bin/fish
 # BEGIN ACE
 colors:
   primary:
-    background: '#091211'
-    foreground: '#96d9d4'
+    background: '#0f131c'
+    foreground: '#bfc2d0'
   cursor:
-    text:       '#091211'
-    cursor:     '#96d9d4'
+    text:       '#0f131c'
+    cursor:     '#bfc2d0'
   normal:
-    black:      '#091211'
-    red:        '#154C71'
-    green:      '#4B7146'
-    yellow:     '#36AA57'
-    blue:       '#1D5E94'
-    magenta:    '#215598'
-    cyan:       '#2599A2'
-    white:      '#96d9d4'
+    black:      '#0f131c'
+    red:        '#54739A'
+    green:      '#4B78AA'
+    yellow:     '#70839C'
+    blue:       '#5686B6'
+    magenta:    '#6C8CB3'
+    cyan:       '#7098C1'
+    white:      '#bfc2d0'
   bright:
-    black:      '#699794'
-    red:        '#154C71'
-    green:      '#4B7146'
-    yellow:     '#36AA57'
-    blue:       '#1D5E94'
-    magenta:    '#215598'
-    cyan:       '#2599A2'
-    white:      '#96d9d4'
+    black:      '#858791'
+    red:        '#54739A'
+    green:      '#4B78AA'
+    yellow:     '#70839C'
+    blue:       '#5686B6'
+    magenta:    '#6C8CB3'
+    cyan:       '#7098C1'
+    white:      '#bfc2d0'
 # END ACE
 
 

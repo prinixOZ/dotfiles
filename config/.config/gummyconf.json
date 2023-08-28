@@ -25,15 +25,15 @@
             },
             "temperature": {
                 "max": 5000,
-                "min": 3000,
-                "mode": 1,
+                "min": 1000,
+                "mode": 3,
                 "val": 6500
             }
         }
     ],
     "time": {
         "adaptation_minutes": 60,
-        "end": "16:30",
-        "start": "06:00"
+        "end": "07:00",
+        "start": "16:30"
     }
 }

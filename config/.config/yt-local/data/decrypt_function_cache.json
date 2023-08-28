@@ -1,0 +1,87 @@
+{
+    "decrypt_cache": {
+        "/s/player/23604418/player-plasma-ias-phone-en_US.vflset/base.js": [
+            [
+                2,
+                35
+            ],
+            [
+                0,
+                73
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                25
+            ],
+            [
+                0,
+                4
+            ],
+            [
+                1,
+                3
+            ],
+            [
+                2,
+                54
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                52
+            ]
+        ],
+        "/s/player/f2f137c6/player-plasma-ias-phone-en_US.vflset/base.js": [
+            [
+                0,
+                71
+            ],
+            [
+                2,
+                19
+            ],
+            [
+                2,
+                22
+            ],
+            [
+                2,
+                66
+            ],
+            [
+                0,
+                79
+            ],
+            [
+                2,
+                36
+            ]
+        ],
+        "/s/player/f980f2a9/player-plasma-ias-phone-en_US.vflset/base.js": [
+            [
+                0,
+                46
+            ],
+            [
+                2,
+                37
+            ],
+            [
+                0,
+                20
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    "version": 1
+}

@@ -1,8 +1,0 @@
-#!/bin/sh
-if [ -d ~/Anime ];then
-	fusermount -uz ~/Anime
-	rmdir ~/Anime
-else
-	mkdir ~/Anime
-	rclone -v mount "anime:" ~/Anime --vfs-cache-mode full &
-fi

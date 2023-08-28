@@ -103,27 +103,22 @@ bindsym $mod+l focus right
 #+++++++++++++++++++++++++++ Terminal Applications ++++++++++++++++++++++++++++
 #==============================================================================
 bindsym $mod+Return exec alacritty
-bindsym $mod+shift+Return exec sdmenu
 bindsym $mod+c exec alacritty -e htop
 bindsym $mod+e exec alacritty -e lfub
-bindsym $mod+shift+e exec pcmanfm
+bindsym $mod+shift+e exec pcmanfm 
 bindsym $mod+o exec  alacritty --title=pulsemixer -e pulsemixer
 bindsym $mod+Shift+o exec  overview
-bindsym $mod+x exec slock
+bindsym $mod+s exec capsesc
+bindsym $mod+x exec "i3lock -c 000000"
 
 #==============================================================================
 #++++++++++++++++++++++++++++++++ Browsers++++++++++++++++++++++=++++++++++++++
 #==============================================================================
 bindsym $mod+a exec bm
+bindsym $mod+Shift+a exec watchlist -l
+bindsym $mod+w exec watchlist -a
+bindsym $mod+shift+Return exec sdmenu
 bindsym $mod+b exec alacritty -e nb
-bindsym $mod+v exec movies
-bindsym $mod+Shift+v exec movies -d
-
-#==============================================================================
-#+++++++++++++++++++++++++++++ Network Manager ++++++++++++++=+++++++++++++++++
-#==============================================================================
-bindsym $mod+n exec nmcli connection up JioFiber-Home5G && nmcli connection up London
-bindsym $mod+shift+n exec nw
 
 #==============================================================================
 #+++++++++++++++++++++++ Toggle window focus all ++++++++++++++++++++++++++++++
@@ -149,13 +144,20 @@ bindsym XF86AudioMute exec --no-startup-id volume mute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 #==============================================================================
+#+++++++++++++++++++++++++++ Brightness Keybindings +++++++++++++++++++++++++++++++
+#==============================================================================
+bindsym XF86MonBrightnessDown exec brightness down 
+bindsym XF86MonBrightnessUp exec brightness up
+bindsym $mod+F6 exec brightness down
+bindsym $mod+F7 exec brightness up
+
+#==============================================================================
 #++++++++ change container layout (stacked, tabbed, toggle split) +++++++++++++
 #==============================================================================
 bindsym $mod+comma layout tabbed
 bindsym $mod+period layout toggle split
 bindsym $mod+Shift+f floating toggle
 bindsym $mod+shift+s sticky toggle
-bindsym $mod+s exec keyswap
 
 #==============================================================================
 #++++++++++++++++++ VERTICLE AND HOWRIZONTAL SPLIT ++++++++++++++++++++++++++++
@@ -183,7 +185,7 @@ bindsym $mod+Shift+comma  exec xrandr -o normal
 bindsym $mod+F1 exec ytfzf -D -l
 bindsym $mod+F2 exec ytfzf -l -D -c S --sort date 
 bindsym $mod+F3 exec ytfzf-channel -D 
-bindsym $mod+F5 exec mpv-yt
+bindsym $mod+F5 exec linkhandler
 
 bindsym $mod+F11 exec toggle polybar
 bindsym F11 fullscreen toggle
@@ -192,10 +194,10 @@ bindsym $mod+F12 exec toggle stalonetray
 #==============================================================================
 #+++++++++++++++++++++++++++++ DMENU SCRIPTS ++++++++++++++++++++++++++++++++++
 #==============================================================================
-bindsym $mod+d exec env LC_ALL=en_US.UTF-8 dmenu_run -l 8 -g 4 -nb "#0F0F0F" -sb "$bg" -p "Run: " #Dmenu
-bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu='env LC_ALL=en_US.UTF-8 dmenu -l 8 -g 4 -nb "#0F0F0F" -sb "$bg" -p "Run: "' #Dmenu To Show all desktop application
+bindsym $mod+d exec env LC_ALL=en_US.UTF-8 dmenu_run -l 8 -g 4 -nb "#0F0F0F" -p "Run: " 
+bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu='env LC_ALL=en_US.UTF-8 dmenu -l 8 -g 4 -nb "#0F0F0F" -p "Run: "'
 bindsym $mod+shift+p exec keepmenu
-bindsym $mod+p exec pirokit
+bindsym $mod+p exec links
 # bindsym $mod+Shift+n exec networkmanager_dmenu -nb "#0f0f0f" -sb "$bg" -l 40
 
 #==============================================================================
@@ -232,9 +234,9 @@ for_window [title="tmux" instance="Alacritty" class="Alacritty"] move container 
 #+++++++++++++++++++++++++++++ Stylings +++++++++++++++++++++++++++++++++++++++
 #==============================================================================
 smart_borders no_gaps
-for_window [class=".*"] border pixel 3
-gaps inner 2
-gaps outer 2
+for_window [class=".*"] border pixel 2
+gaps inner 0
+gaps outer 1
 
 #==============================================================================
 #++++++++++++++++++++++++ RUN FILES ON STARTUP ++++++++++++++++++++++++++++++++
