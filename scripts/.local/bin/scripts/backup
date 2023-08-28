@@ -14,8 +14,11 @@ config(){
 }
 
 all(){
+    sudo echo
     photos
     config
+    paru -Syyu
+    sudo pacman -Rs $(pacman -Qqtd)
 }
 
 case $1 in 
