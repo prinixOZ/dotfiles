@@ -14,7 +14,6 @@ config(){
 }
 
 all(){
-    sudo echo
     photos
     config
     paru -Syyu
