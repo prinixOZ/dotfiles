@@ -13,11 +13,14 @@ config(){
     cd -
 }
 
+update(){
+    paru -Syyu
+    sudo pacman -Rs $(pacman -Qqtd)
+}
+
 all(){
     photos
     config
-    paru -Syyu
-    sudo pacman -Rs $(pacman -Qqtd)
 }
 
 case $1 in 
@@ -25,6 +28,8 @@ case $1 in
         photos;;
     -c)
         config;;
+    -u)
+        update;;
     *)
         all;;
 esac

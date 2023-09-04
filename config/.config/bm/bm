@@ -4,7 +4,7 @@ searx | https://searx.be/
 wiby | https://wiby.me/
 yandex | https://yandex.com
 startpage.com | https://www.startpage.com/
-yt | http://localhost:2000/https://youtube.com/subscriptions/ | librewolf -P default
+yt | http://localhost:2000/https://youtube.com/subscriptions/ 
 torrent | https://localhost:9091/
 activity watch | http://localhost:5600/#/timeline  | surf
 alternativeto.net | alternativeto.net
@@ -41,9 +41,9 @@ etsy | etsy.com/
 
 ## Streaming
 invidious | https://vid.puffyan.us/ 
-piped     | https://piped.kavin.rocks/ | librewolf -P default
-yt | http://localhost:2000/https://youtube.com/subscriptions/ | librewolf -P default
-spotify | https://open.spotify.com/| librewolf -P stream
+piped     | https://piped.kavin.rocks/ 
+yt | http://localhost:2000/https://youtube.com/subscriptions/ 
+spotify | https://open.spotify.com | librewolf -P stream
 noxx | https://noxx.to/
 
 ## Torrent
