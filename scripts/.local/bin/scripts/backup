@@ -13,6 +13,10 @@ config(){
     cd -
 }
 
+password(){
+    rclone sync ~/.local/New.kdbx "drive:Personal"
+}
+
 update(){
     paru -Syyu
     sudo pacman -Rs $(pacman -Qqtd)
@@ -20,6 +24,7 @@ update(){
 
 all(){
     photos
+    password
     config
 }
 
@@ -30,6 +35,8 @@ case $1 in
         config;;
     -u)
         update;;
+    -k)
+        password;;
     *)
         all;;
 esac
