@@ -28,14 +28,14 @@ subtitles_language = 'en'
 # 0 - Related videos disabled
 # 1 - Related videos always shown
 # 2 - Related videos hidden; shown by clicking a button
-related_videos_mode = 2
+related_videos_mode = 0
 
 # 0 - Video comments disabled
 # 1 - Video comments always shown
 # 2 - Video comments hidden; shown by clicking a button
 comments_mode = 2
 
-enable_comment_avatars = True
+enable_comment_avatars = False
 
 # 0 to sort by top
 # 1 to sort by newest
@@ -59,7 +59,7 @@ video_player = 0
 
 proxy_images = True
 
-use_comments_js = True
+use_comments_js = False
 
 use_sponsorblock_js = True
 

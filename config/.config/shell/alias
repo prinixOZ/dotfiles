@@ -55,6 +55,7 @@ alias weather='clear && curl wttr.in/Jamshedpur'
 
 # Speed test
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
+alias t="tgpt"
 
 # EDITOR
 alias valias="$EDITOR ~/.config/shell/alias"

@@ -35,7 +35,7 @@ aliasoz - Protonmail | https://mail.proton.me/u/0/ | librewolf -P proton
 simplelogin | https://app.simplelogin.io/dashboard/ | librewolf -P proton
 
 ## Shopping
-amazon | https://amazon.in/ | librewolf -P social
+amazon | https://amazon.in/ | librewolf -P shopping
 flipkart | https://flipkart.com/
 etsy | etsy.com/
 
