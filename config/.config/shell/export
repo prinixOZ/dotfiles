@@ -12,6 +12,7 @@ export RUST_BACKTRACE=1
 export VIEB_DATAFOLDER=~/.local/share/Vieb/
 export TERMCMD='alacritty -e'
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export GOPATH="$XDG_DATA_HOME"/go
 
 
 #ZSH
@@ -30,3 +31,4 @@ export RXVT_SOCKET="$XDG_RUNTIME_DIR"/urxvtd
 
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export GLAMOUR_STYLE="dark"
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java

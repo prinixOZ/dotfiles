@@ -12,7 +12,6 @@ function stowgit
     git push -u origin main && cd -
 end
 
-
 function push
     read -p 'echo "Type your commit message here : "' commitmsg
     git add .

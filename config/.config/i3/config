@@ -118,7 +118,7 @@ bindsym $mod+a exec bm
 bindsym $mod+Shift+a exec watchlist -l
 bindsym $mod+w exec watchlist -a
 bindsym $mod+shift+Return exec sdmenu
-bindsym $mod+b exec alacritty -e nb
+bindsym $mod+b exec alacritty -e newsboat
 
 #==============================================================================
 #+++++++++++++++++++++++ Toggle window focus all ++++++++++++++++++++++++++++++
@@ -126,7 +126,7 @@ bindsym $mod+b exec alacritty -e nb
 # bindsym $mod+a focus parent
 # bindsym $mod+Shift+a focus child
 bindsym $mod+space focus mode_toggle
-bindsym $mod+Shift+space exec nw
+bindsym $mod+Shift+n exec nw
 
 #==============================================================================
 #+++++++++++++++++++++++++++ Move Window Keys +++++++++++++++++++++++++++++++++
