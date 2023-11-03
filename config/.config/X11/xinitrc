@@ -10,13 +10,11 @@
 # ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
 
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY&
+python ~/.local/share/yt-local/server.py &
 xset b off &
 setxkbmap -option caps:swapescape &
-librewolf &
-zsh &
-python ~/.local/share/youtube-local/server.py &
+librewolf -P default &
 find &
-rep 5 "bat-stat" &
 
 # Starting window manager
 exec i3

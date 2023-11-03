@@ -1,4 +1,3 @@
-
 vim.opt.guicursor = "" -- set cursor to be a block even in the insert mode
 vim.opt.hidden = true  -- open buffers in backgroud if not close
 vim.opt.relativenumber = true

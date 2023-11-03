@@ -65,7 +65,7 @@ use_sponsorblock_js = True
 
 theme = 2
 
-font = 3
+font = 2
 
 embed_page_mode = True
 

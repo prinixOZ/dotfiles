@@ -2,8 +2,8 @@
 link="$1"
 videoId=$(echo $link | awk -F "?v=" '{print $NF}')
 
-#url="https://www.youtube.com/watch?v=$videoId" 
-#mpv $(yt-dlp -f 'bestvideo[height=720]' "$url" --get-url) --audio-file=$(yt-dlp -f bestaudio "$url" --get-url)
+url="https://www.youtube.com/watch?v=$videoId" 
+#mpv "$url"
 
 videoUrl="http://localhost:2000/https://www.youtube.com/watch?v=$videoId"
 src=$(curl -s "$videoUrl" | grep "<source" | tail -1 | awk -F\" '{print $2}' | sed 's/&amp;/\&/g')

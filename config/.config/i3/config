@@ -118,7 +118,7 @@ bindsym $mod+a exec bm
 bindsym $mod+Shift+a exec watchlist -l
 bindsym $mod+w exec watchlist -a
 bindsym $mod+shift+Return exec sdmenu
-bindsym $mod+b exec alacritty -e newsboat
+bindsym $mod+b exec alacritty -e nb
 
 #==============================================================================
 #+++++++++++++++++++++++ Toggle window focus all ++++++++++++++++++++++++++++++
@@ -127,6 +127,7 @@ bindsym $mod+b exec alacritty -e newsboat
 # bindsym $mod+Shift+a focus child
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+n exec nw
+bindsym $mod+n exec bluetooth
 
 #==============================================================================
 #+++++++++++++++++++++++++++ Move Window Keys +++++++++++++++++++++++++++++++++

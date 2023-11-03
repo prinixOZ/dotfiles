@@ -9,18 +9,18 @@ vim.g.maplocalleader = " "
 -- Moving between buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<leader>w", ":bd<CR>", opts)
 
 -- Explorer
-keymap("n", "<leader>e", ":Ex<CR>", opts)
+keymap("n", "<C-e>", ":Ex<CR>", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Up>", ":resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 
 --close window
-keymap("n", "<leader>w", ":bd<CR>", opts)
 keymap("", "<Space>", "<Nop>", opts)
 
 -- stop arrow usage

@@ -11,7 +11,7 @@ alternativeto.net | alternativeto.net
 opensourcealternative | https://www.opensourcealternative.to/
 
 ### Skill
-typingclub | https://www.edclub.com/sportal/ | librewolf -P typing
+typingclub | https://www.edclub.com/sportal/ | surf
 monkeytype | https://monkeytype.com/  | librewolf -P typing
 keybr      | https://www.keybr.com/  | librewolf -P typing
 tryhackme  | https://tryhackme.com/ | librewolf -P skills
@@ -19,9 +19,10 @@ coursera | https://www.coursera.org/learn/introduction-to-front-end-development/
 skillshare | https://www.skillshare.com/ | librewolf -P skills
 
 ## Google
-gmail | https://mail.google.com | librewolf -P google
+priyanshu.sharma1207@gmail.com | https://mail.google.com/mail/u/0 | librewolf -P google
+prinixoz@gmail.com | https://mail.google.com/mail/u/1 | librewolf -P google
 chatgpt | http://chat.openai.com/ | librewolf -P google
-bardai | http://bard.google.com/ | librewolf -P google
+bardai | http://bard.google.com/u/1/ | librewolf -P google
 drive | drive.google.com | librewolf -P google
 keep | https://keep.google.com | librewolf -P google
 
@@ -58,12 +59,12 @@ aniwatch | https://aniwatch.to/
 
 ### Games
 schulte | https://drafterleo.github.io/schulte/ 
-chess | https://chess.com/ | librewolf -P app
+chess | https://chess.com/ | librewolf -P typing
 
 ### Torrent
 nyaa | https://nyaa.si/
 subsplease | https://subsplease.org/
-thepiratebay | https://thepiratebay.org/index.html
+thepiratebay | https://thepiratebay.org/index.html | torbrowser-launcher
 hacknation  | https://hacksnation.com/
 1337x | https://1337x.to/
 
@@ -72,18 +73,10 @@ reddit | https://reddit.com/ | librewolf -P social
 whatsapp | https://web.whatsapp.com/ | librewolf -P whatsapp
 telegram | | telegram-desktop
 mastodon | https://techhub.social/ | librewolf -P social
-anilist | https://anilist.co | librewolf -P weeb
-kenmei | https://www.kenmei.co/dashboard | librewolf -P weeb
-anichart | https://anichart.net/ | librewolf -P weeb
-mangareader | https://mangareader.to/
-viz | viz.com/shonenjump
 github | https://github.com/ | librewolf -P social
+instagram | https://www.instagram.com/ | librewolf -P social
 
 ## Studies
-pw | & | brave --profile-directory="Profile 9" --app="https://www.pw.live/study/batches/aarambh-11th-commerce-516197/batch-overview"
-accountancy | http://localhost:2000/https://www.youtube.com/watch?v=Ohv5RQXFqRk&list=PLv_Jo3K8g_DoyE-HxbjrXS0wc4_uPafCL&index=3
-bst | http://localhost:2000/https://www.youtube.com/playlist?list=PLv_Jo3K8g_DolJxD6P1o4MWBNJpyCSC9l
-economics | http://localhost:2000/https://www.youtube.com/playlist?list=PLv_Jo3K8g_DqjdJH2W4SE--PPdKmP0Pdm
 pomodoro | https://app.pomodorotimer.online/ | librewolf -P stream
 
 ### Docs
@@ -123,3 +116,6 @@ heaventree | https://heaventree.xyz/ | surf
 
 ## HACKING
 overthewire | https://overthewire.org/wargames/bandit/
+
+## Random
+andrew tate money | http://localhost:2000/https://www.youtube.com/watch?v=UulkPQLF6ss 
