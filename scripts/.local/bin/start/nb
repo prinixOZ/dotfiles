@@ -1,2 +1,6 @@
 #!/bin/sh
-killall newsboat ; newsboat -q
+if [ $@ == "-b" ]; then
+    killall newsboat ; newsboat -u ~/.config/newsboat/urls.bak -q
+else
+    killall newsboat ; newsboat -q
+fi

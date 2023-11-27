@@ -67,4 +67,5 @@ alias vsearch="$EDITOR ~/.config/bm/search"
 alias vi1="$EDITOR ~/.config/X11/xinitrc"
 alias vi2="$EDITOR ~/.config/i3/scripts/startup.sh"
 alias vi3="$EDITOR ~/.config/i3/config"
+alias vinsta="$EDITOR ~/.config/instaloader/profiles"
 alias v=nvim

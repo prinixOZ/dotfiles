@@ -119,6 +119,7 @@ bindsym $mod+Shift+a exec watchlist -l
 bindsym $mod+w exec watchlist -a
 bindsym $mod+shift+Return exec sdmenu
 bindsym $mod+b exec alacritty -e nb
+bindsym $mod+Shift+b exec alacritty -e nb -b
 
 #==============================================================================
 #+++++++++++++++++++++++ Toggle window focus all ++++++++++++++++++++++++++++++
@@ -143,6 +144,14 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id volume up
 bindsym XF86AudioLowerVolume exec --no-startup-id volume down
 bindsym XF86AudioMute exec --no-startup-id volume mute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+#==============================================================================
+#+++++++++++++++++++++++++++++++ Keyboard +++++++++++++++++++++++++++++++++++++
+#==============================================================================
+bindsym $mod+F1 exec librewolf -P stream "https://open.spotify.com/" 
+bindsym $mod+F2 exec --no-startup-id volume down
+bindsym $mod+F3 exec --no-startup-id volume up
+bindsym $mod+F4 exec --no-startup-id volume mute
 
 #==============================================================================
 #+++++++++++++++++++++++++++ Brightness Keybindings +++++++++++++++++++++++++++++++
@@ -183,9 +192,6 @@ bindsym $mod+Shift+comma  exec xrandr -o normal
 #==============================================================================
 #++++++++++++++++++++++++++++++++ YTFZF +++++++++++++++++++++++++++++++++++++++
 #==============================================================================
-bindsym $mod+F1 exec ytfzf -D -l
-bindsym $mod+F2 exec ytfzf -l -D -c S --sort date 
-bindsym $mod+F3 exec ytfzf-channel -D 
 bindsym $mod+F5 exec linkhandler
 
 bindsym $mod+F11 exec toggle polybar
@@ -230,6 +236,8 @@ for_window [class="Dragon-drop" instance="dragon-drop"] sticky enable; exec i3-m
 for_window [class="Yad" instance="yad"] floating enable;exec i3-msg sticky enable; exec i3-msg resize set width 300px;
 for_window [instance="Alacritty" class="Alacritty" title="pulsemixer"] floating enable
 for_window [title="tmux" instance="Alacritty" class="Alacritty"] move container to workspace number 10
+for_window [title="Spotify - Web Player: Music for everyone — LibreWolf" instance="Navigator" class="LibreWolf" ] move container to workspace number 11
+for_window [title="Spotify - Web Player: Music for everyone — LibreWolf" instance="Navigator" class="LibreWolf" ] fullscreen enable 
 
 #==============================================================================
 #+++++++++++++++++++++++++++++ Stylings +++++++++++++++++++++++++++++++++++++++
