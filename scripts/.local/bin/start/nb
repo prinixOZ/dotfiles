@@ -2,5 +2,5 @@
 if [ $@ == "-b" ]; then
     killall newsboat ; newsboat -u ~/.config/newsboat/urls.bak -q
 else
-    killall newsboat ; newsboat -q
+    killall newsboat -c ~/.config/newsboat/cache.edu.db ; newsboat -q
 fi

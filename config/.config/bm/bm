@@ -25,6 +25,7 @@ chatgpt | http://chat.openai.com/ | librewolf -P google
 bardai | http://bard.google.com/u/1/ | librewolf -P google
 drive | drive.google.com | librewolf -P google
 keep | https://keep.google.com | librewolf -P google
+home | https://home.google.com/u/3/ | librewolf -P google
 
 ## Work
 simplenote | https://app.simplenote.com/ | librewolf -P work
@@ -40,14 +41,6 @@ amazon | https://amazon.in/ | librewolf -P shopping
 flipkart | https://flipkart.com/
 etsy | etsy.com/
 
-## Streaming
-invidious | https://vid.puffyan.us/ 
-piped     | https://piped.kavin.rocks/ 
-spotify | https://open.spotify.com | librewolf -P stream
-noxx | https://noxx.to/
-
-## Torrent
-alpha wallpaper | https://wall.alphacoders.com/ | brave --incognito
 wallhaven | https://wallhaven.cc/
 
 ### Weeb
@@ -58,6 +51,7 @@ aniwatch | https://aniwatch.to/
 
 ### Games
 schulte | https://drafterleo.github.io/schulte/ 
+breating | https://zenmix.io/breathing-timer/
 chess | https://chess.com/ | librewolf -P typing
 
 ### Torrent
@@ -68,12 +62,8 @@ hacknation  | https://hacksnation.com/
 1337x | https://1337x.to/
 
 ### Social
-reddit | https://reddit.com/ | librewolf -P social
 whatsapp | https://web.whatsapp.com/ | librewolf -P whatsapp
-telegram | | telegram-desktop
-mastodon | https://techhub.social/ | librewolf -P social
 github | https://github.com/ | librewolf -P social
-instagram | https://www.instagram.com/ | librewolf -P social
 
 ## Studies
 pomodoro | https://app.pomodorotimer.online/ | librewolf -P stream
