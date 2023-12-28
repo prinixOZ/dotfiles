@@ -204,6 +204,7 @@ key_bindings:
     action: SpawnNewInstance
 shell:
       program: /bin/fish
+
 # BEGIN ACE
 colors:
   primary:
