@@ -108,7 +108,6 @@ bindsym $mod+e exec alacritty -e lfub
 bindsym $mod+shift+e exec pcmanfm 
 bindsym $mod+o exec  alacritty --title=pulsemixer -e pulsemixer
 bindsym $mod+Shift+o exec  overview
-bindsym $mod+s exec capsesc
 bindsym $mod+x exec "i3lock -c 000000"
 
 #==============================================================================
