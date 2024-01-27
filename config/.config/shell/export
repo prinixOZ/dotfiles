@@ -13,6 +13,7 @@ export VIEB_DATAFOLDER=~/.local/share/Vieb/
 export TERMCMD='alacritty -e'
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export GOPATH="$XDG_DATA_HOME"/go
+export XORGCONFIG="$XDG_CONFIG_HOME"/X11/xorg
 
 
 #ZSH
