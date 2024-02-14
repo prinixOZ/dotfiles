@@ -10,12 +10,12 @@
 # ERRFILE="$XDG_CACHE_HOME/X11/xsession-errors"
 # localectl set-x11-keymap us '' '' caps:escape
 
-setxkbmap -option caps:swapescape &
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY&
 python ~/.local/share/youtube-local/server.py &
 xset b off &
 librewolf -P default &
 find &
+[[ -f ~/.xmodmap-jack ]] && xmodmap ~/.xmodmap-jack
 
 # Starting window manager
 exec i3

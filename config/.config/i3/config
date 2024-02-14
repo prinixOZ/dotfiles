@@ -189,6 +189,7 @@ bindsym $mod+apostrophe split v
 #bindsym $mod+Shift+period resize grow width 1 px or 1 ppt
 #bindsym $mod+Shift+comma resize shrink width 1 px or 1 ppt
 
+bindsym $mod+F9 exec librewolf -P whatsapp "https://web.whatsapp.com/"
 bindsym $mod+F10 exec polywal
 bindsym $mod+Shift+r restart
 #==============================================================================
@@ -201,7 +202,6 @@ bindsym $mod+Shift+comma  exec xrandr -o normal
 #++++++++++++++++++++++++++++++++ YTFZF +++++++++++++++++++++++++++++++++++++++
 #==============================================================================
 bindsym $mod+F5 exec linkhandler
-
 bindsym $mod+F11 exec toggle polybar
 bindsym F11 fullscreen toggle
 bindsym $mod+F12 exec toggle stalonetray
