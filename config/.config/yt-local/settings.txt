@@ -45,13 +45,15 @@ theater_mode = True
 
 default_resolution = 720
 
+autoplay_videos = False
+
 codec_rank_h264 = 3
 
 codec_rank_vp = 2
 
 codec_rank_av1 = 1
 
-prefer_uni_sources = True
+prefer_uni_sources = 1
 
 use_video_hotkeys = True
 
@@ -71,6 +73,10 @@ embed_page_mode = True
 
 autocheck_subscriptions = True
 
+include_shorts_in_subscriptions = 0
+
+include_shorts_in_channel = 1
+
 # Developer use to debug 403s
 gather_googlevideo_domains = False
 
@@ -78,5 +84,5 @@ gather_googlevideo_domains = False
 debugging_save_responses = False
 
 # Do not change, remove, or comment out this value, or else your settings may be lost or corrupted
-settings_version = 4
+settings_version = 5
 
